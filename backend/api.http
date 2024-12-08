@@ -1,0 +1,30 @@
+POST http://localhost:9000/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "1yourUsername",
+    "password": "1yourPassword",
+    "email": "1yourEmail@example.com",
+    "name": "1yourName"
+}
+
+
+###
+
+POST http://localhost:9000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "1yourEmail@example.com",
+    "password": "1yourPassword"
+}
+
+
+###
+
+GET http://localhost:9000/get_user_and_profile HTTP/1.1
+Content-Type: application/json
+
+{
+  "token": "86f3722eedf348703f45492a154bd060e1064f226f0579526e9a89892f5021d5"
+}
